@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zen.hua.mybatis.boot.sample.base.mapper.UserMapper">
+
+    <!-- 别名 -->
+    <select id="findAll" resultType="User">
+        select * from user
+    </select>
+
+    <select id="findById" resultType="zen.hua.mybatis.boot.sample.base.entity.User">
+        select * from user where id = #{id}
+    </select>
+
+    <!--
+        parameterType可以省略，TypeHandler进行适配
+    -->
+    <insert id="insertOne">
+        insert into user (name) values(#{name})
+    </insert>
+
+    <update id="updateById" >
+        update user set name=#{name} where id=#{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from user where id=#{id}
+    </delete>
+
+    <!-- ====================================== 动态sql部分 ============================================-->
+
+    <select id="findByIf" resultType="User">
+        select * from user
+        where 1=1
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="name != null and name.trim().length() > 0">
+           and name like concat('%',#{name},'%')
+        </if>
+    </select>
+
+    <select id="findByIfElse" resultType="User">
+        select * from user
+        where 1=1
+        <choose>
+            <when test="name == 'li2'">
+                and id = 2
+            </when>
+            <when test="id == 1">
+                and id = 3
+            </when>
+            <otherwise>
+                and id > 3
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="findByWhere" resultType="User">
+        select * from user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+        </where>
+
+    </select>
+
+    <update id="updateBySet">
+        update user
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="findByBind" resultType="User">
+        <bind name="pattern" value="_parameter.getName() + '%'" />
+        SELECT * FROM user WHERE name LIKE #{pattern}
+    </select>
+
+
+    <select id="findByTrimWhere" resultType="User">
+        select * from user
+        <trim prefix="where" prefixOverrides="AND|OR">
+            <if test="name != null">
+               and name=#{name}
+            </if>
+            <if test="id != null">
+                and id=#{id}
+            </if>
+        </trim>
+    </select>
+
+    <update id="updateByTrimSet">
+        update user
+        <trim prefix="set" suffixOverrides="," suffix=" where id = #{id} ">
+            <if test="name != null and name.trim().length() > 0" >
+                name=#{name},
+            </if>
+        </trim>
+    </update>
+    <!-- ========================================= selectKey===================================================-->
+
+    <!--
+        首先在数据库插入user对象，然后执行 select LAST_INSERT_ID()获取数据库里自动生成的主键，最后赋值给user对象的id属性。
+        1. keyProperty：对应Java实体类中充当主键的属性名，跟数据库的主键对应；
+        2. order：取值 AFTER 或者 BEFORE。如上例子所述，
+            AFTER 表示在insert执行之后执行 SELECT LAST_INSERT_ID() ，多用获取自增主键；
+            BEFORE 表示在insert执行之前执行select uuid()，适合那种主键不是自增的情况，实现自定义主键。
+        3. resultType：主键类型
+    -->
+    <insert id="addUserForGetId" parameterType="User">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into user(name) values (#{name})
+    </insert>
+
+    <!--
+        keyProperty="name"，本应为id，此处是方便模拟。
+    -->
+    <insert id="addUserForGenerateId" parameterType="User">
+        <selectKey resultType="string" order="BEFORE" keyProperty="name">
+            select uuid()
+        </selectKey>
+        insert into user(name) values (#{name})
+    </insert>
+
+    <!-- ==============   sql标签基础用法    ============-->
+    <sql id="BASE_COLUMN_LIST">
+        id, name
+    </sql>
+
+
+    <sql id="BASE_COLUMN_LIST2">
+        ${alias}.id, ${alias}.name
+    </sql>
+
+    <!-- 1 sql标签基础用法  -->
+    <select id="findForBaseSql" resultType="User">
+        select <include refid="BASE_COLUMN_LIST"/>
+        from user where id = #{id}
+    </select>
+
+    <!-- 2 sql标签静态参数化-->
+    <select id="findForParamSql" resultType="User">
+        select
+        <include refid="BASE_COLUMN_LIST2">
+            <property name="alias" value="t1"/>
+        </include>
+        from user t1 where id = #{id}
+    </select>
+
+    <!-- ====================== dynamic sql 之 foreach ======================= -->
+
+    <!--
+        foreach 标签的属性主要有 collection，item，index，open，separator，close。其含义如下所示：
+
+        1. collection：遍历的对象。当遍历对象是List、Array对象时，collection属性值分别默认用"list"、"array"代替，而Map对象没有默认的属性值。
+            注意：可以使用 @Param(“keyName”) 注解来自定义collection属性值，设置keyName后，list、array会失效。
+        2. item：集合元素遍历时的别名称。该参数为必选项。
+        3. index：在list、array中，index为元素的序号索引，但是在Map中，index为遍历元素的key值。该参数为可选项。
+        4. open：遍历集合时的开始符号，通常与 close=")" 搭配使用。使用场景为 IN()、values()时。该参数为可选项。
+        5. separator：元素之间的分隔符，类比在 IN() 的时候，separator=","，最终所有遍历的元素将会以设定的逗号符号隔开。该参数为可选项。
+        6. close：遍历集合时的结束符号，通常与 open="(" 搭配使用。该参数为可选项。
+    -->
+
+    <select id="findByForEachList" resultType="User">
+        select * from user where id in
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="findByForEachList2" resultType="User">
+        select * from user where id in
+        <foreach collection="idList" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="findByForEachArray" resultType="User">
+        select * from user where id in
+        <foreach collection="array" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="findByForEachArray2" resultType="User">
+        select * from user where id in
+        <foreach collection="idArray" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="findByForEachMap1" resultType="User">
+        select * from user where
+        <if test="map!= null and map.size() >0">
+            (name,id) IN
+            <foreach collection="map.entrySet()" item="value"  index="key" separator="," open="(" close=")">
+                (#{key},#{value})
+            </foreach>
+        </if>
+    </select>
+
+    <select id="findByForEachMap2" resultType="User">
+        select * from user where
+        <if test="map!= null and map.size() >0">
+            id IN
+            <foreach collection="map.values" item="value" separator="," open="(" close=")">
+                #{value}
+            </foreach>
+        </if>
+    </select>
+
+
+    <select id="findByForEachMap3" resultType="User">
+        select * from user where
+        <if test="map!= null and map.size() >0">
+            name IN
+            <foreach collection="map.keys" item="key" separator="," open="(" close=")">
+                #{key}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>

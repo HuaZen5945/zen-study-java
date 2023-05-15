@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="zen.hua.bao.dal.mybatis.biz.multi.dao.huw.OrderMapper">
+
+    <insert id="insert">
+        insert into tab_json values (null,#{data})
+    </insert>
+
+
+    <select id="selectAll" resultType="zen.hua.demo.pojo.TabJson">
+        select * from tab_json
+    </select>
+
+</mapper>

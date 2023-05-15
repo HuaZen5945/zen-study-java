@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zen.hua.mybatis.boot.sample.base.mapper.OrderMapper">
+
+
+    <!--一对一映射-->
+    <resultMap id="ONE_TO_ONE_MAP" type="Order">
+        <!--
+            id,使用id，是唯一标识。
+            result,总体字段重复，只返回一条。
+        -->
+        <id column="id" property="id"/>
+        <result column="order_time" property="orderTime"/>
+        <result column="amount" property="amount"/>
+
+        <association property="consumer"  javaType="Consumer" columnPrefix="consumer_">
+            <id column="id" property="id"/>
+            <result column="user_name" property="userName"/>
+        </association>
+    </resultMap>
+
+    <!--一对一映射-->
+    <resultMap id="ONE_TO_ONE_MAP2" type="Order">
+        <id column="id" property="id"/>
+        <result column="order_time" property="orderTime"/>
+        <result column="amount" property="amount"/>
+
+        <association property="consumer"  column="user_id"
+            select="zen.hua.mybatis.boot.sample.base.mapper.ConsumerMapper.findById" >
+            <id column="id" property="id"/>
+            <result column="user_name" property="userName"/>
+        </association>
+    </resultMap>
+
+    <select id="findOneToOne" resultMap="ONE_TO_ONE_MAP">
+        select o.id, o.order_time, c.id as consumer_id,
+               c.user_name as consumer_user_name
+        from `order` o left join `consumer` c on o.user_id= c.id
+    </select>
+
+    <select id="findOneToOne2" resultMap="ONE_TO_ONE_MAP2">
+        select * from `order`
+    </select>
+
+    <select id="findByUid" resultType="Order">
+        select * from `order` where user_id = #{uid}
+    </select>
+</mapper>

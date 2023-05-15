@@ -1,0 +1,162 @@
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+        顶层configuration 配置
+        properties属性
+        settings设置
+        typeAliases类型命名
+        typeHandlers类型处理器
+        objectFactory对象工厂
+        plugins插件
+        environments环境
+        environment环境变量
+        transactionManager事务管理器
+        dataSource数据源
+        databaseIdProvider数据库厂商标识
+        mappers映射器
+    -->
+    <properties resource="db.properties"/>
+
+    <settings>
+        <!--该配置影响的所有映射器中配置的缓存的全局开关，默认true-->
+        <setting name="cacheEnabled" value="true"/>
+        <!--延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。
+            特定关联关系中可通过设置fetchType属性来覆盖该项的开关状态， 默认false-->
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <!--当启用时，对任意延迟属性的调用会使带有延迟加载属性的对象完整加载；反之，每种属性将会按需加载。 默认true-->
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!--是否允许单一语句返回多结果集（需要兼容驱动）默认true-->
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <!--使用列标签代替列名。不同的驱动在这方面会有不同的表现，
+            具体可参考相关驱动文档或通过测试这两种不同的模式来观察所用驱动的结果。默认true-->
+        <setting name="useColumnLabel" value="true"/>
+        <!--允许 JDBC 支持自动生成主键，需要驱动兼容。
+        如果设置为 true 则这个设置强制使用自动生成主键，尽管一些驱动不能兼容但仍可正常工作（比如 Derby）。默认false-->
+        <setting name="useGeneratedKeys" value="false"/>
+        <!--指定 MyBatis 应如何自动映射列到字段或属性。
+            NONE 表示取消自动映射；
+            PARTIAL 只会自动映射没有定义嵌套结果集映射的结果集。
+            FULL 会自动映射任意复杂的结果集（无论是否嵌套）
+            默认PARTIAL
+        -->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!--
+            配置默认的执行器。
+            - SIMPLE 就是普通的执行器；
+            - REUSE 执行器会重用预处理语句（prepared statements）；
+            - BATCH 执行器将重用语句并执行批量更新。
+            默认SIMPLE
+        -->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!--设置超时时间，它决定驱动等待数据库响应的秒数。默认无设置-->
+        <setting name="defaultStatementTimeout" value="25"/>
+        <!-- 为驱动程序设置一个提示，以控制返回结果的获取大小。查询设置可以覆盖此参数值。 默认无设置-->
+<!--        <setting name="defaultFetchSize" value="100"/>-->
+        <!--允许在嵌套语句中使用分页（RowBounds）。默认false-->
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <!--是否开启自动驼峰命名规则（camel case）映射，
+            即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn 的类似映射。 默认false-->
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <!--
+            MyBatis 利用本地缓存机制（Local Cache）防止循环引用（circular references）和加速重复嵌套查询。
+            - 默认值为 SESSION，这种情况下会缓存一个会话中执行的所有查询。
+            - 若设置值为 STATEMENT，本地会话仅用在语句执行上，对相同 SqlSession 的不同调用将不会共享数据。
+        -->
+        <setting name="localCacheScope" value="SESSION"/>
+        <!--
+            当没有为参数提供特定的 JDBC 类型时，为空值指定 JDBC 类型。
+            某些驱动需要指定列的 JDBC 类型，多数情况直接用一般类型即可，比如 NULL、VARCHAR 或 OTHER。
+        -->
+        <setting name="jdbcTypeForNull" value="OTHER"/>
+        <!-- 指定哪个对象的方法触发一次延迟加载。 默认如下-->
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+        <!--指定动态 SQL 生成的默认语言。默认值如下-->
+        <setting name="defaultScriptingLanguage" value="org.apache.ibatis.scripting.xmltags.XMLDynamicLanguageDriver"/>
+        <!--
+            指定当结果集中值为 null 的时候是否调用映射对象的 setter（map 对象时为 put）方法，
+            这对于有 Map.keySet() 依赖或 null 值初始化的时候是有用的。默认false。
+            注意基本类型（int、boolean等）是不能设置成 null 的。
+        -->
+        <setting name="callSettersOnNulls" value="false"/>
+        <!--
+            指定 MyBatis 增加到日志名称的前缀。默认无设置
+        -->
+<!--        <setting name="logPrefix" value="anyString"/>-->
+
+        <!--
+            指定 MyBatis 所用日志的具体实现，未指定时将自动查找。
+            SLF4J | LOG4J | LOG4J2 | JDK_LOGGING | COMMONS_LOGGING | STDOUT_LOGGING | NO_LOGGING
+        -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+
+        <!--
+            指定 Mybatis 创建具有延迟加载能力的对象所用到的代理工具
+            CGLIB | JAVASSIST, 默认 JAVASSIST (MyBatis 3.3 or above)
+        -->
+        <setting name="proxyFactory" value="JAVASSIST"/>
+
+        <!-- 场景1：要使延迟加载生效必须配置下面两个属性
+           1. lazyLoadingEnabled属性表示延迟加载的全局开关。当开启时，所有关联对象都会延迟加载。默认为false。
+           2.  agressiveLazyLoading属性启用时，会使带有延迟加载属性的对象立即加载;
+                反之，每种属性将会按需加载。默认为true,所以这里需要设置成false。
+        -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <typeAliases>
+        <!-- 方式1： 指定类起别名，不区分大小写-->
+        <typeAlias alias="user" type="zen.hua.mybatis.boot.sample.base.entity.User"/>
+        <!-- 方式2：指定包下的所有类，会使用Bean的首字母小写的非限定类名来作为它的别名。除非使用注解-->
+        <package name="zen.hua.mybatis.boot.sample.base.entity"/>
+        <!-- 方式3： 类上加注解 @Alias -->
+        <!--
+            默认别名：基本类型，如 _int -> int; 包装类型，如int、integer -> Integer
+        -->
+    </typeAliases>
+
+
+    <typeHandlers>
+        <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>
+    </typeHandlers>
+
+
+    <environments default="development">
+        <environment id="development">
+            <!--配置事务的管理方式-->
+            <!--
+                1. type为"JDBC"时，使用JdbcTransaction管理事务。
+                2. type为"managed"时，使用ManagedTransaction管理事务（也就是交由外部容器管理）
+            -->
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis" />
+                <property name="username" value="root" />
+                <property name="password" value="root" />
+            </dataSource>
+        </environment>
+        <!--使用配置文件方式-->
+        <environment id="dbProperties">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver} "/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username} "/
+                <property name="password" value="${password} "/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--
+       多数据库支持： http://www.mybatis.cn/mybatis/872.html
+       todo 待后续补充
+    -->
+    <databaseIdProvider type="DB_VENDOR">
+        <property name="Oracle" value="oracle"/>
+        <property name="MySQL" value="mysql"/>
+    </databaseIdProvider>
+</configuration>

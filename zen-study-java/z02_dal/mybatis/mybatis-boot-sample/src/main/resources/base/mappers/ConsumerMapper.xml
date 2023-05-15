@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zen.hua.mybatis.boot.sample.base.mapper.ConsumerMapper">
+
+    <resultMap id="ONE_TO_MANY_MAP" type="Consumer">
+        <result column="id" property="id"></result>
+        <result column="user_name" property="userName"></result>
+
+        <!--
+            javaType非必填
+        -->
+        <collection property="orderList" ofType="Order"
+                    javaType="ArrayList" columnPrefix="order_">
+            <result column="oid" property="id"></result>
+            <result column="order_time" property="orderTime"></result>
+            <result column="amount" property="amount"></result>
+        </collection>
+    </resultMap>
+
+    <resultMap id="ONE_TO_MANY_MAP2" type="Consumer">
+        <result column="id" property="id"></result>
+        <result column="user_name" property="userName"></result>
+
+        <collection property="orderList" column="id"
+                    javaType="ArrayList" fetchType="lazy"
+                    select="zen.hua.mybatis.boot.sample.base.mapper.OrderMapper.findByUid">
+            <result column="id" property="id"></result>
+            <result column="order_time" property="orderTime"></result>
+            <result column="amount" property="amount"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findOneToMany" resultMap="ONE_TO_MANY_MAP">
+        select  c.id , c.user_name,
+                o.id as order_id, o.order_time as order_order_time,
+                o.amount as order_amount
+        from `consumer` c  left join  `order` o  on c.id = o.user_id
+    </select>
+
+    <select id="findOneToMany2" resultMap="ONE_TO_MANY_MAP2">
+        select  * from `consumer`
+    </select>
+
+    <select id="findById" resultType="Consumer">
+        select * from consumer where id = #{id}
+    </select>
+</mapper>

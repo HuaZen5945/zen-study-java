@@ -1,0 +1,45 @@
+# 采用纯springboot配置
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    #    initialization-mode: always
+    #    continue-on-error: true
+    #    schema:
+    #    - "classpath:db/schema.sql"
+    #    data:
+    #    - "classpath:db/data.sql"
+    hikari:
+      minimum-idle: 5
+      connection-test-query: SELECT 1 FROM DUAL
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: SpringBootDemoHikariCP
+      max-lifetime: 60000
+      connection-timeout: 30000
+  sql:
+    init:
+      schema-locations: "classpath:base/db/schema.sql"
+      data-locations: "classpath:base/db/data.sql"
+      mode: always
+      continue-on-error: true
+## 打印sql日志
+logging:
+  level:
+    zen.hua.mybatis.boot.sample.base: debug
+    zen.hua.mybatis.boot.sample.base.mapper: trace
+# mapper 文件位置
+mybatis:
+  configuration:
+    # 下划线转驼峰
+    map-underscore-to-camel-case: true
+  # mapper文件所在包
+  mapper-locations: classpath:base/mappers/*.xml
+  # 起别名所在包
+  type-aliases-package: zen.hua.mybatis.boot.sample.base.entity
+  # 核心配置文件位置 config-location 与 mybatis其他配置 不能一起使用
+#  config-location: "classpath:base/mybatis-config.xml"

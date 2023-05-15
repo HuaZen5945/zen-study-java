@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+">
+    <!--引入其他配置文件-->
+    <context:property-placeholder location="classpath*:biz/outbound/db.properties" />
+
+    <!--配置数据源-->
+    <bean id="commonDatasource" class="com.alibaba.druid.pool.DruidDataSource"
+        init-method="init" destroy-method="clone">
+        <property name="driverClassName" value="${common.datasource.driver-class-name}"/>
+<!--        <property name="url" value="jdbc.warp-jdbc:filters=stat:${common.datasource.url}"/>-->
+        <property name="url" value="${common.datasource.url}"/>
+        <property name="username" value="${common.datasource.username}"/>
+        <property name="password" value="${common.datasource.password}"/>
+        <property name="filters" value="stat"/>
+        <property name="maxActive" value="20"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxWait" value="60000"/>
+        <property name="minIdle" value="1"/>
+        <property name="timeBetweenEvictionRunsMillis" value="3000"/>
+        <property name="minEvictableIdleTimeMillis" value="30000"/>
+        <property name="validationQuery" value="SELECT 'x'"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+    </bean>
+
+    <!--配置事务管理器-->
+    <bean id="commonTxManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="commonDatasource"/>
+    </bean>
+
+    <!--开启事务注解支持-->
+<!--    <tx:annotation-driven transaction-manager="commonTxManager"/>-->
+
+    <!--使用mybatis-plus的sqlFactory-->
+    <bean id="commonSqlSessionFactory" class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
+        <property name="dataSource" ref="commonDatasource"/>
+        <property name="mapperLocations" value="${common.datasource.mapper-location}"/>
+        <property name="configLocation" value="${common.datasource.mybatis-config-location}"/>
+        <property name="typeAliasesPackage" value="${common.datasource.typeAliasesPackage}"/>
+    </bean>
+
+    <!--配置mapper包扫描-->
+    <bean id="commonMapperScan" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="zen.hua.dal.mybatis.plus.biz.outbound.mapper.common"/>
+        <property name="sqlSessionFactoryBeanName" value="commonSqlSessionFactory" />
+    </bean>
+
+
+    <!--=====================配置其他数据源========================================-->
+</beans>

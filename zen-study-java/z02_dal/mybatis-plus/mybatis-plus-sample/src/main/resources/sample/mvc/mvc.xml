@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--使用mp的sqlSessionFactory-->
+    <bean id="sqlSessionFactory"
+          class="com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean">
+        <!--核心配置文件微信-->
+        <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
+        <!--mapper文件位置-->
+        <property name="mapperLocations" value="classpath*:mapper/*.xml"/>
+        <!--别名所在包-->
+        <property name="typeAliasesPackage"  value="com.hua.pojo"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="globalConfig">
+            <bean class="com.baomidou.mybatisplus.core.config.GlobalConfig">
+                <property name="dbConfig">
+                    <bean class="com.baomidou.mybatisplus.core.config.GlobalConfig$DbConfig">
+                        <property name="idType" value="AUTO"/>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+</beans>

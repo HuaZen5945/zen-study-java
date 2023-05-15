@@ -1,0 +1,156 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>zen.hua</groupId>
+  <artifactId>zen-study-java</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>zen-study-java</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>z01_boot</module>
+    <module>z02_dal</module>
+    <module>z03_cache</module>
+  </modules>
+
+  <properties>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!--spring依赖-->
+    <spring-boot.version>2.6.7</spring-boot.version>
+    <spring-cloud.version>2021.0.5</spring-cloud.version>
+    <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
+    <spring.version>5.3.15</spring.version>
+
+    <!--job依赖-->
+    <powerjob.version>4.2.0</powerjob.version>
+
+    <!--dal依赖-->
+    <mybatis-spring-boot-starter.version>2.2.2</mybatis-spring-boot-starter.version>
+    <mysql-connector-java.version>8.0.29</mysql-connector-java.version>
+    <mybatis-plus-boot.version>3.5.2</mybatis-plus-boot.version>
+    <pagehelper-boot.version>1.4.3</pagehelper-boot.version>
+    <druid.version>1.1.21</druid.version>
+
+    <!--工具依赖-->
+    <hutool.version>5.8.10</hutool.version>
+    <fastjson.version>2.0.24</fastjson.version>
+
+    <!--cache依赖-->
+    <caffeine.version>2.9.3</caffeine.version>
+    <tair.version>2.3.5</tair.version>
+    <redisson-boot.version>3.17.1</redisson-boot.version>
+
+    <!--rule engine规则引擎-->
+    <QLExpress.version>3.3.1</QLExpress.version>
+
+    <!--文件相关依赖-->
+    <ali-oss.version>3.15.1</ali-oss.version>
+
+    <!--应用内依赖-->
+    <zen.hua.base.version>1.0-SNAPSHOT</zen.hua.base.version>
+    <zen.hua.common.version>1.0-SNAPSHOT</zen.hua.common.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+    </dependency>
+
+
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!--springboot依赖管理-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- SpringCloud 依赖导入 -->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- SpringCloud Alibaba 依赖导入 -->
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>${spring-cloud-alibaba.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+
+      <!--$$ 工具依赖  $$-->
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.20</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.9</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>20.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>2.13.8</version>
+      </dependency>
+
+      <!--slf4j-api关联logback-->
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.26</version>
+      </dependency>
+
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.3</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

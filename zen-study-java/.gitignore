@@ -1,0 +1,11 @@
+### zen.hua.base ###
+target/
+logs/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntellJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
