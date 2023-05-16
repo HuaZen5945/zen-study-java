@@ -13,7 +13,7 @@ CREATE TABLE `consumer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='消费者表';
 
 
--- 消费者表
+-- 订单表
 DROP TABLE IF EXISTS `order`;
 CREATE TABLE `order` (
     `id` bigint  COMMENT '主键',
@@ -23,4 +23,21 @@ CREATE TABLE `order` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='订单表';
 
 
+-- Map表
+DROP TABLE IF EXISTS `user_map`;
+CREATE TABLE `user_map` (
+    `id` bigint  COMMENT '主键',
+    `name` VARCHAR(128) COMMENT '用户名',
+    `sex` varchar(16) COMMENT '性别',
+    `type` varchar(32) COMMENT '类型'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='消费者表';
 
+-- 测试JSON数据
+drop table tab_json;
+-- 创建测试表
+CREATE TABLE `tab_json`
+(
+    `id`   bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+    `data` json DEFAULT NULL COMMENT 'json字符串',
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

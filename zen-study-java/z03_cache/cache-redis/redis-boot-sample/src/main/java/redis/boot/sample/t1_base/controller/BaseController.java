@@ -1,5 +1,6 @@
 package redis.boot.sample.t1_base.controller;
 
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,9 @@ public class BaseController {
 
 
     ReentrantLock reentrantLock = new ReentrantLock();
+
+
+    private RedisTemplate<Object,Object> redisTemplate;
 
     /**
      * 测试单机锁
@@ -71,14 +75,14 @@ public class BaseController {
         return key;
     }
 
-//    /**
-//     * 发布消息
-//     */
-//    //测试：http://localhost:10088/redis/eventPush
-//    @RequestMapping("/redis/eventPush")
-//    public Boolean eventPush(){
-//        template.convertAndSend("topic1","topic1-我是第一种事件消息");
-//        template.convertAndSend("topic2","topic2-我是第二种事件消息");
-//        return true;
-//    }
+    /**
+     * 发布消息
+     */
+    //测试：http://localhost:10088/redis/eventPush
+    @RequestMapping("/redis/eventPush")
+    public Boolean eventPush(){
+        redisTemplate.convertAndSend("topic1","topic1-我是第一种事件消息");
+        redisTemplate.convertAndSend("topic2","topic2-我是第二种事件消息");
+        return true;
+    }
 }

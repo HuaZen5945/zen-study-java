@@ -9,10 +9,13 @@
 
   <name>zen-study-java</name>
   <url>http://maven.apache.org</url>
+
+
   <modules>
     <module>z01_boot</module>
     <module>z02_dal</module>
     <module>z03_cache</module>
+    <module>z11_generator</module>
   </modules>
 
   <properties>

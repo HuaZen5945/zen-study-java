@@ -2,7 +2,6 @@ package base.c3_result;
 
 import base.BaseBootTest;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Select;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,7 @@ import java.util.List;
  * @create: 2023-03-13 21:34
  **/
 @Slf4j
-public class T2_Result_Map extends BaseBootTest {
+public class T1_Result_Map extends BaseBootTest {
 
     @Autowired
     private ConsumerMapper consumerMapper;

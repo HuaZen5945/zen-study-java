@@ -15,7 +15,7 @@ import zen.hua.mybatis.boot.sample.base.mapper.UserMapper;
  * @create: 2023-03-09 21:02
  **/
 @Slf4j
-public class T2_Base_DynamicSql extends BaseBootTest {
+public class T1_Base_DynamicSql extends BaseBootTest {
 
     @Autowired
     private UserMapper userMapper;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zen.hua.mybatis.boot.sample.base.mapper.UserMapDOMapper">
+  <resultMap id="BaseResultMap" type="zen.hua.mybatis.boot.sample.base.entity.UserMapDO">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, name, sex, type
+  </sql>
+
+
+  <select id="queryMap" resultType="java.util.Map">
+    select sex, type
+    from user_map
+    group by sex, type
+  </select>
+
+  <select id="queryDistinct" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from user_map
+    group by sex, type
+  </select>
+
+  <select id="queryDistinct2" resultMap="BaseResultMap">
+    select any_value(id),any_value(name),sex,type
+    from user_map
+    group by sex, type
+  </select>
+
+</mapper>

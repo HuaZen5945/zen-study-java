@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/z02_dal/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/z02_dal/mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/study/pom.xml" />
+        <option value="$PROJECT_DIR$/z11_generator/mybatis-generator/pom.xml" />
       </list>
     </option>
   </component>
