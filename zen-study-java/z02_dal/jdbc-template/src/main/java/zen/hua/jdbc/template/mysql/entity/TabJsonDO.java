@@ -1,4 +1,4 @@
-package zen.hua.mybatis.boot.sample.base.entity;
+package zen.hua.jdbc.template.mysql.entity;
 
 import lombok.Data;
 

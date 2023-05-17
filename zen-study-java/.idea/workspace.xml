@@ -4,28 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/entity/TabJsonDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/entity/UserMapDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/UserMapDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers/TabJsonDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers/UserMapDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c3_result/T2_Result_Distinct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/resources/mybatis-generator/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/resources/mybatis-generator/mybatis-generator-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z11_generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="mybatis+mysql的去重使用场景(一步步来)">
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/java/zen/hua/jdbc/template/mysql/MysqlApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/java/zen/hua/jdbc/template/mysql/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/java/zen/hua/jdbc/template/mysql/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/resources/db/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/resources/db/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/test/java/mysql/MysqlBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/test/java/mysql/c1_curd/T1_BaseCurd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/test/java/mysql/c1_curd/T2_TXCurd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/test/java/mysql/c2_json/T1_JsonQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/db/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/db/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/db/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T2_Base_DynamicSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T1_Base_DynamicSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c3_result/T2_Result_Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c3_result/T1_Result_Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/entity/TabJsonDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/java/zen/hua/jdbc/template/mysql/entity/TabJsonDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers/TabJsonDOMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +37,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../JavaTool/repository/org/springframework/spring-jdbc/5.3.19/spring-jdbc-5.3.19-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$PROJECT_DIR$/../../../../JavaTool/repository/org/springframework/spring-tx/5.3.19/spring-tx-5.3.19-sources.jar!/org/springframework/transaction/TransactionDefinition.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,9 +49,8 @@
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
         <option name="localRepository" value="$PROJECT_DIR$/../../../../JavaTool/repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../JavaTool/maven/apache-maven-3.6.1" />
-        <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../JavaTool/maven/apache-maven-3.6.1/conf/settings.xml" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../JavaTool/maven/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../JavaTool/maven/apache-maven-3.8.6/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -77,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/hua/Documents/HuaAll/hua-code/zen-study-java/zen-study-java/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers",
+    "last_opened_file_path": "/Users/hua/Documents/HuaAll/hua-code/zen-study-java/zen-study-java/z02_dal/jdbc-template/src/main/resources/base",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,8 +84,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "252ed12c96de98cd7a15837b4f5c2bd6",
+    "settings.editor.selected.configurable": "preferences.toDoOptions",
+    "spring.configuration.checksum": "f77034f421f6575ff8af8d5826df6d09",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -101,11 +99,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/z02_dal/jdbc-template/src/main/resources/base" />
       <recent name="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers" />
       <recent name="$PROJECT_DIR$/z11_generator" />
       <recent name="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample" />
       <recent name="$PROJECT_DIR$/z02_dal" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -115,6 +113,7 @@
       <recent name="redis.boot.sample.t2_aop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zen.hua.jdbc.template.mysql.entity" />
       <recent name="zen.hua.mybatis.boot.sample.base.mapper" />
       <recent name="zen.hua.mybatis.boot.sample.base.entity" />
       <recent name="redis.boot.sample.t2_aop.config" />
@@ -127,85 +126,94 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.T2_MAP_Result.testQueryGroup">
-    <configuration name="BaseTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cache-local" />
+  <component name="RunManager" selected="JUnit.T1_JsonQuery.test2">
+    <configuration name="T1_BaseCurd.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="zen.hua.cache.local.biz.mmc.*" />
+          <option name="PATTERN" value="mysql.c1_curd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="zen.hua.cache.local.biz.mmc" />
-      <option name="MAIN_CLASS_NAME" value="zen.hua.cache.local.biz.mmc.BaseTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="mysql.c1_curd" />
+      <option name="MAIN_CLASS_NAME" value="mysql.c1_curd.T1_BaseCurd" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T2AopBaseTest.testAopCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redis-boot-sample" />
+    <configuration name="T1_BaseCurd.testQueryList3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="redis.boot.sample.t2_aop.test.*" />
+          <option name="PATTERN" value="mysql.c1_curd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="redis.boot.sample.t2_aop.test" />
-      <option name="MAIN_CLASS_NAME" value="redis.boot.sample.t2_aop.test.T2AopBaseTest" />
-      <option name="METHOD_NAME" value="testAopCache" />
+      <option name="PACKAGE_NAME" value="mysql.c1_curd" />
+      <option name="MAIN_CLASS_NAME" value="mysql.c1_curd.T1_BaseCurd" />
+      <option name="METHOD_NAME" value="testQueryList3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T2_MAP_Result.testQueryGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-boot-sample" />
+    <configuration name="T1_BaseCurd.testQueryOne2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.c3_result.*" />
+          <option name="PATTERN" value="mysql.c1_curd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.c3_result" />
-      <option name="MAIN_CLASS_NAME" value="base.c3_result.T2_MAP_Result" />
-      <option name="METHOD_NAME" value="testQueryGroup" />
+      <option name="PACKAGE_NAME" value="mysql.c1_curd" />
+      <option name="MAIN_CLASS_NAME" value="mysql.c1_curd.T1_BaseCurd" />
+      <option name="METHOD_NAME" value="testQueryOne2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T2_MAP_Result.testQueryMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-boot-sample" />
+    <configuration name="T1_JsonQuery.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-template" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="base.c3_result.*" />
+          <option name="PATTERN" value="mysql.c2_json.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="base.c3_result" />
-      <option name="MAIN_CLASS_NAME" value="base.c3_result.T2_MAP_Result" />
-      <option name="METHOD_NAME" value="testQueryMap" />
+      <option name="PACKAGE_NAME" value="mysql.c2_json" />
+      <option name="MAIN_CLASS_NAME" value="mysql.c2_json.T1_JsonQuery" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-generator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="Application" />
+    <configuration name="T1_JsonQuery.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mysql.c2_json.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mysql.c2_json" />
+      <option name="MAIN_CLASS_NAME" value="mysql.c2_json.T1_JsonQuery" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.T2_MAP_Result.testQueryGroup" />
-        <item itemvalue="JUnit.T2_MAP_Result.testQueryMap" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="JUnit.BaseTest.test" />
-        <item itemvalue="JUnit.T2AopBaseTest.testAopCache" />
+        <item itemvalue="JUnit.T1_JsonQuery.test2" />
+        <item itemvalue="JUnit.T1_JsonQuery.test1" />
+        <item itemvalue="JUnit.T1_BaseCurd.testQueryOne2" />
+        <item itemvalue="JUnit.T1_BaseCurd.test7" />
+        <item itemvalue="JUnit.T1_BaseCurd.testQueryList3" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +226,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684158269192</updated>
       <workItem from="1684158270444" duration="11998000" />
-      <workItem from="1684246560454" duration="5923000" />
+      <workItem from="1684246560454" duration="6627000" />
+      <workItem from="1684282645684" duration="7043000" />
     </task>
     <task id="LOCAL-00001" summary="基于springboot进行学习">
       <created>1684166828639</created>
@@ -234,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684166887726</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mybatis+mysql的去重使用场景(一步步来)">
+      <created>1684252508340</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684252508340</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="基于springboot进行学习" />
     <MESSAGE value="零散的学习模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="零散的学习模块" />
+    <MESSAGE value="mybatis+mysql的去重使用场景(一步步来)" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis+mysql的去重使用场景(一步步来)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -272,6 +289,12 @@
           <url>file://$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t2_aop/aspect/RedisCacheAspect.java</url>
           <line>65</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/z02_dal/jdbc-template/src/main/java/zen/hua/jdbc/template/mysql/config/DataSourceConfig.java</url>
+          <line>22</line>
+          <properties field="dbUrl" class="zen.hua.jdbc.template.config.DataSourceConfig" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

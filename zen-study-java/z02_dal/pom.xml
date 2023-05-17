@@ -11,6 +11,9 @@
 
     <artifactId>z02_dal</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>jdbc-template</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
