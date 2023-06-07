@@ -29,6 +29,13 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
+        <!--非核心依赖-->
+        <dependency>
+            <groupId>org.joda</groupId>
+            <artifactId>joda-money</artifactId>
+            <version>1.0.3</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -52,7 +59,7 @@
                 </dependencies>
                 <configuration>
                     <!--核心配置点-->
-                    <configurationFile>src/main/resources/mybatis-generator/mybatis-generator-config.xml</configurationFile>
+                    <configurationFile>src/main/resources/mybatis-generator/mysql-generator-config.xml</configurationFile>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
                 </configuration>

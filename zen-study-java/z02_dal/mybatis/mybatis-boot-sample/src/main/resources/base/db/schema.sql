@@ -41,3 +41,14 @@ CREATE TABLE `tab_json`
     `data` json DEFAULT NULL COMMENT 'json字符串',
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- 创建咖啡表
+drop table t_coffee;
+create table t_coffee (
+    id bigint not null auto_increment,
+    name varchar(255),
+    price bigint not null,
+    create_time timestamp,
+    update_time timestamp,
+    primary key (id)
+);

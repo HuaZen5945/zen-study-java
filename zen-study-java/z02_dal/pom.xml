@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>jdbc-template</module>
+        <module>druid</module>
+        <module>jpa</module>
     </modules>
 
     <properties>
@@ -39,27 +41,6 @@
                 <version>${mybatis-plus-boot.version}</version>
             </dependency>
 
-
-            <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${pagehelper-boot.version}</version>
-                <!--为了mybatis-plus进行兼容-->
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.mybatis</groupId>
-                        <artifactId>mybatis</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.mybatis</groupId>
-                        <artifactId>mybatis-spring</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.github.jsqlparser</groupId>
-                        <artifactId>jsqlparser</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
 
             <!--mybatis与spring的整合包-->
             <!--数据库驱动jar-->

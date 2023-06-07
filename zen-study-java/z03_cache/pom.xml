@@ -14,6 +14,7 @@
     <modules>
         <module>cache-redis</module>
         <module>cache-local</module>
+        <module>cache-mongo</module>
     </modules>
 
     <properties>

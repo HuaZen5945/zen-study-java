@@ -41,5 +41,7 @@ mybatis:
   mapper-locations: classpath:base/mappers/*.xml
   # 起别名所在包
   type-aliases-package: zen.hua.mybatis.boot.sample.base.entity
+  # type-hanlder 所在位置
+  type-handlers-package: zen.hua.mybatis.boot.sample.base.config.typeHandler
   # 核心配置文件位置 config-location 与 mybatis其他配置 不能一起使用
 #  config-location: "classpath:base/mybatis-config.xml"

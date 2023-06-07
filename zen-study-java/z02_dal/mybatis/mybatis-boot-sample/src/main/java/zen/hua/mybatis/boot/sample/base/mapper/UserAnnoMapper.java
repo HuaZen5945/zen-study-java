@@ -27,7 +27,7 @@ public interface UserAnnoMapper {
     /**
      * cud方法可以返回boolean
      * @param user
-     * @return 变更条数>0为false
+     * @return 变更条数>0 为false
      */
     @Insert("insert into user (name) values(#{name})")
     boolean insertOne(User user);

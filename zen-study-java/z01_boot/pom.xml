@@ -10,6 +10,10 @@
     </parent>
 
     <artifactId>z01_boot</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>c1_dal</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
