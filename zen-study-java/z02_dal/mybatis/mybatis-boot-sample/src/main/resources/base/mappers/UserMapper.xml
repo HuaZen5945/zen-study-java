@@ -104,6 +104,7 @@
             </if>
         </trim>
     </update>
+
     <!-- ========================================= selectKey===================================================-->
 
     <!--
@@ -228,5 +229,14 @@
             </foreach>
         </if>
     </select>
+
+    <!-- ======================== 批量操作 =============== -->
+    <update id="batchUpdate">
+        <foreach collection="list" item="item" separator=";">
+            update `user`
+            set `name` = #{item.name}
+            where id = #{item.id}
+        </foreach>
+    </update>
 
 </mapper>

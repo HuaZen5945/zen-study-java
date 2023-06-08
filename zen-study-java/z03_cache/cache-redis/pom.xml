@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>redis-boot-sample</module>
+        <module>jedis-demo</module>
     </modules>
 
     <properties>

@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/z11_generator/mybatis-generator/pom.xml" />
         <option value="$PROJECT_DIR$/z02_dal/mybatis/mybatis-pagehelper-demo/pom.xml" />
         <option value="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/pom.xml" />
       </list>
     </option>
   </component>

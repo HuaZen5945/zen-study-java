@@ -15,6 +15,7 @@
         <module>cache-redis</module>
         <module>cache-local</module>
         <module>cache-mongo</module>
+        <module>spring-cache</module>
     </modules>
 
     <properties>

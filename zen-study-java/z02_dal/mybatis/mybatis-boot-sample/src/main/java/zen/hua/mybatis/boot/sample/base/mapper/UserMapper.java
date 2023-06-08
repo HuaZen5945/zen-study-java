@@ -198,4 +198,12 @@ public interface UserMapper {
     User findForParamSql(Long id);
 
 
+    // ======================== 批量操作 ===============
+    /**
+     *
+     * @param list
+     * @return
+     */
+    boolean batchUpdate(List<User> list);
+
 }

@@ -1,4 +1,4 @@
-package zen.hua.mongo.demo;
+package zen.hua.jedis.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,12 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-public class MongoDemoApplicationTests {
-
-	@Test
-	public void contextLoads() {
-	}
+@SpringBootTest(classes = JedisDemoApplication.class)
+public class BaseTest {
 
 }
 
