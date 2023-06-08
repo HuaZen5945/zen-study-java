@@ -4,47 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="mongo使用">
-      <change afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c5_batch/T1_BatchOperate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/main/java/zen/hua/mongo/demo/config/MongoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/main/java/zen/hua/mongo/demo/repository/CoffeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/test/java/zen/hua/mongo/demo/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/test/java/zen/hua/mongo/demo/c1_template/T1_BaseTemplateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/test/java/zen/hua/mongo/demo/c2_repository/T2_BaseRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/JedisDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/config/JedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/model/Coffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/model/CoffeeOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/model/OrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/repository/CoffeeOrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/repository/CoffeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/service/CoffeeOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/java/zen/hua/jedis/demo/service/CoffeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/test/java/zen/hua/jedis/demo/c1_native/T1_DemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/test/java/zen/hua/jedis/demo/c2_jedispool/T1_DemoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/src/main/java/zen/hua/spring/cache/redis/demo/SpringCacheRedisDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/src/main/java/zen/hua/spring/cache/redis/demo/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/src/main/java/zen/hua/spring/cache/redis/demo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/current/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/application-base.yml" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/application-base.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/resources/base/mappers/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/main/java/zen/hua/mongo/demo/MongoDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/main/java/zen/hua/mongo/demo/MongoDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z03_cache/cache-mongo/mongo-demo/src/test/java/zen/hua/mongo/demo/MongoDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/jedis-demo/src/test/java/zen/hua/jedis/demo/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/z03_cache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="mongo使用" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,8 +68,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "8ee39a652b6cd7caa14e2fa159899b98",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "spring.configuration.checksum": "da4024ad45c854ee73b5219566c59d35",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -291,6 +251,7 @@
       <workItem from="1684425300695" duration="24421000" />
       <workItem from="1686232952210" duration="3003000" />
       <workItem from="1686235967450" duration="3044000" />
+      <workItem from="1686239683659" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="基于springboot进行学习">
       <created>1684166828639</created>
@@ -327,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686153719901</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="mongo使用">
+      <created>1686239703787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686239703787</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +309,9 @@
     <MESSAGE value="spring-jpa使用" />
     <MESSAGE value="mongo使用" />
     <option name="LAST_COMMIT_MESSAGE" value="mongo使用" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
