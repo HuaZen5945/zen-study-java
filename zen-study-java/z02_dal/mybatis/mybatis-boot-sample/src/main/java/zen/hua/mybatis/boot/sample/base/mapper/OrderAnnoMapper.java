@@ -10,7 +10,7 @@ import zen.hua.mybatis.boot.sample.base.entity.Order;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 订单注解mapper
  * @author: HUA
  * @create: 2023-03-13 21:15

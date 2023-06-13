@@ -7,14 +7,14 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.redis.connection.DataType;
-import redis.boot.sample.t1_base.BaseTest;
 import redis.boot.sample.biz.RedisBootUtil;
+import redis.boot.sample.t1_base.BaseTest;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-15 19:07

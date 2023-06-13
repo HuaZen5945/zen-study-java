@@ -2,11 +2,11 @@ package zen.hua.dal.mp.biz.outbound.test;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import zen.hua.dal.mp.biz.outbound.mannager.WorkingDayManager;
 import zen.hua.dal.mp.biz.outbound.BizOutBoundApplicationTests;
+import zen.hua.dal.mp.biz.outbound.mannager.WorkingDayManager;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-02-11 11:14

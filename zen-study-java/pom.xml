@@ -15,7 +15,9 @@
     <module>z01_boot</module>
     <module>z02_dal</module>
     <module>z03_cache</module>
+    <module>z04_job</module>
     <module>z11_generator</module>
+    <module>z12_rule-engine</module>
   </modules>
 
   <properties>

@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-13 23:26

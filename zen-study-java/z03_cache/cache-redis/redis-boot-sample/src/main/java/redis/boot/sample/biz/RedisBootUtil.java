@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: redis工具类，基于redisTemplate。
  * @author: HUA
  * @create: 2022-12-22 21:50

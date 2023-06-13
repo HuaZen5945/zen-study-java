@@ -5,7 +5,7 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-02-14 19:41

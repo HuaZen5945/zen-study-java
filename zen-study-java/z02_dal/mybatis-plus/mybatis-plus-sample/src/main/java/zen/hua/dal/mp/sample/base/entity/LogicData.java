@@ -1,13 +1,16 @@
 package zen.hua.dal.mp.sample.base.entity;
 
-import com.baomidou.mybatisplus.annotation.*;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.util.Date;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 逻辑删除entity
  * @author: HUA
  * @create: 2023-02-23 23:56

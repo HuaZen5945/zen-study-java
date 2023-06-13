@@ -9,7 +9,7 @@ import redis.boot.sample.t1_base.BaseTest;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-17 23:23

@@ -3,10 +3,8 @@ package redis.boot.sample.t2_aop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import static redis.boot.sample.t2_aop.RedisAopApplication.SCAN_PACKAGE;
-
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-13 23:28

@@ -15,6 +15,8 @@
         <module>jdbc-template</module>
         <module>druid</module>
         <module>jpa</module>
+        <module>mybatis</module>
+        <module>mybatis-plus</module>
     </modules>
 
     <properties>

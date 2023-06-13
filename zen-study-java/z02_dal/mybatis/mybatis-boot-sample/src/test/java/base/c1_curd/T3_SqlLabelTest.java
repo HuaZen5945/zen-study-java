@@ -8,7 +8,7 @@ import zen.hua.mybatis.boot.sample.base.entity.User;
 import zen.hua.mybatis.boot.sample.base.mapper.UserMapper;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: sql标签的使用
  * @author: HUA
  * @create: 2023-03-11 09:07

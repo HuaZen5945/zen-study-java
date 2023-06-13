@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 商品DO
  * @author: HUA
  * @create: 2023-02-07 23:19

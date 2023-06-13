@@ -15,11 +15,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 测试逻辑删除
  * @author: HUA
  * @create: 2023-02-23 23:55
- *
  **/
 @Slf4j
 public class T1_LogicDeleteTest extends BaseTest {

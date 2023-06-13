@@ -1,7 +1,7 @@
 package current04;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 双重检查锁
  * @author: HUA
  * @create: 2023-02-27 06:27

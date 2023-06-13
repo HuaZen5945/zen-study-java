@@ -1,7 +1,5 @@
 package redis.boot.sample.lock.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -11,7 +9,7 @@ import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSeriali
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 单机版redis配置类
  * @author: HUA
  * @create: 2022-12-22 21:30

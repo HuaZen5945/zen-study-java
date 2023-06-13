@@ -1,12 +1,11 @@
 package zen.hua.mybatis.boot.sample.base.mapper;
 
-import org.apache.ibatis.annotations.Select;
 import zen.hua.mybatis.boot.sample.base.entity.Order;
 
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 订单mapper
  * @author: HUA
  * @create: 2023-03-13 21:15

@@ -9,7 +9,7 @@ import zen.hua.mybatis.boot.sample.base.entity.Consumer;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 消费者注解式mapper
  * @author: HUA
  * @create: 2023-03-13 20:59

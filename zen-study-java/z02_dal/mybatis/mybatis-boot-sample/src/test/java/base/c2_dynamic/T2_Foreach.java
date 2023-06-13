@@ -5,14 +5,13 @@ import cn.hutool.core.map.MapUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import zen.hua.mybatis.boot.sample.base.entity.User;
 import zen.hua.mybatis.boot.sample.base.mapper.UserMapper;
 
 import java.util.Arrays;
 import java.util.Map;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 测试foreach标签
  * @author: HUA
  * @create: 2023-03-11 12:18

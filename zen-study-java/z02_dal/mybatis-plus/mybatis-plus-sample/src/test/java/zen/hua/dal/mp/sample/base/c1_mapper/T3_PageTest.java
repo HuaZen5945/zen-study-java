@@ -2,18 +2,13 @@ package zen.hua.dal.mp.sample.base.c1_mapper;
 
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.session.RowBounds;
 import org.assertj.core.util.Maps;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.CollectionUtils;
 import zen.hua.dal.mp.sample.base.BaseTest;
 import zen.hua.dal.mp.sample.base.entity.User;
 import zen.hua.dal.mp.sample.base.mapper.UserPageMapper;
@@ -26,7 +21,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 分页查询
  * @author: HUA
  * @create: 2023-02-23 22:36

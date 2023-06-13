@@ -9,7 +9,7 @@ import zen.hua.mybatis.boot.sample.base.mapper.UserAnnoMapper;
 import zen.hua.mybatis.boot.sample.base.mapper.UserMapper;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 动态sql测试
  * @author: HUA
  * @create: 2023-03-09 21:02

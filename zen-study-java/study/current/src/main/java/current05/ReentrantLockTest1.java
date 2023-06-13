@@ -3,7 +3,7 @@ package current05;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-02-28 07:14

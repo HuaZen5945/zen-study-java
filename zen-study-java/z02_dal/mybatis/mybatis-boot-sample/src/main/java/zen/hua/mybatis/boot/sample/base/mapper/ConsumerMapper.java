@@ -1,15 +1,11 @@
 package zen.hua.mybatis.boot.sample.base.mapper;
 
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
 import zen.hua.mybatis.boot.sample.base.entity.Consumer;
 
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 消费者mapper
  * @author: HUA
  * @create: 2023-03-13 20:59

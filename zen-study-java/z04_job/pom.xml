@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>zen.hua</groupId>
+        <artifactId>zen-study-java</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>z04_job</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>powerjob</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <powerjob.version>4.2.0</powerjob.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--powerjob依赖-->
+            <dependency>
+                <groupId>tech.powerjob</groupId>
+                <artifactId>powerjob-worker-spring-boot-starter</artifactId>
+                <version>${powerjob.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tech.powerjob</groupId>
+                <artifactId>powerjob-client</artifactId>
+                <version>${powerjob.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

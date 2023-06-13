@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: mapper 接口的cud操作
  * @author: HUA
  * @create: 2023-02-23 21:47

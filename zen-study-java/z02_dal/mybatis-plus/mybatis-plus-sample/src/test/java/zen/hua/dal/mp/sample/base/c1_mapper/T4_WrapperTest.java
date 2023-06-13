@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
-import net.minidev.json.writer.UpdaterMapper;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import zen.hua.dal.mp.sample.base.BaseTest;
@@ -18,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 测试条件构建器
  * @author: HUA
  * @create: 2023-02-23 23:52

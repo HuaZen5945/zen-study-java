@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: outbound启动类
  * @author: HUA
  * @create: 2023-02-11 10:24

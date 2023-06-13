@@ -4,7 +4,95 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="mongo使用" />
+    <list default="true" id="638f4960-05f3-4970-be99-b1de85817d94" name="更改" comment="mongo使用">
+      <change afterPath="$PROJECT_DIR$/z04_job/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/processor/BasicProcessorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/processor/BroadcastProcessorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/processor/DAGSimulationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/processor/MapReduceProcessorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/processor/StaticSliceProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/sm1/Sm1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/java/zen/hua/job/power/simple/sm2/Sm2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/biz/mmc/application-mmc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/biz/mmc/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/biz/mmc/db/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/biz/mmc/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/simple/application-sm1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z04_job/powerjob/src/main/resources/simple/application-sm2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T1_SampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T2_FunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T3_OperatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T4_addFunOfMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T5_macroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T6_CompileScript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T7_UncertainParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T8_Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/c1_base/T9_TimeOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/model/function/BeanExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/src/test/java/zen/hua/re/ql/sample/model/operator/JoinOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/z12_rule-engine/ql-express/官方文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current01/ThreadPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current01/ThreadPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current04/DoubleCheckedLocking.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current04/DoubleCheckedLocking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current04/DoubleCheckedLocking1.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current04/DoubleCheckedLocking1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current04/Instance.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current04/Instance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current04/InstanceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current04/InstanceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/current/src/main/java/current05/ReentrantLockTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/study/current/src/main/java/current05/ReentrantLockTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/OutboundApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/OutboundApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/entity/common/WorkingDayDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/entity/common/WorkingDayDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/mannager/WorkingDayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/mannager/WorkingDayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/mapper/common/WorkingDayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/biz/outbound/mapper/common/WorkingDayMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/entity/LogicData.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/entity/LogicData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/LogicDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/LogicDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/UserActiveRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/UserActiveRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/main/java/zen/hua/dal/mp/sample/base/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/biz/outbound/test/WorkingDayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/biz/outbound/test/WorkingDayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T1_CudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T1_CudTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T2_SelectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T2_SelectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T3_PageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T3_PageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T4_WrapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c1_mapper/T4_WrapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c2_serivce/T3_PageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c2_serivce/T3_PageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c3_active_record/T1_CURD.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c3_active_record/T1_CURD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c4_ext/T1_LogicDeleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis-plus/mybatis-plus-sample/src/test/java/zen/hua/dal/mp/sample/base/c4_ext/T1_LogicDeleteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/entity/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/entity/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/ConsumerAnnoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/ConsumerAnnoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/ConsumerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/ConsumerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/OrderAnnoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/OrderAnnoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/main/java/zen/hua/mybatis/boot/sample/base/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c1_curd/T2_IdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c1_curd/T2_IdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c1_curd/T3_SqlLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c1_curd/T3_SqlLabelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T1_Base_DynamicSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T1_Base_DynamicSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T2_Foreach.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c2_dynamic/T2_Foreach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c3_result/T1_Result_Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-boot-sample/src/test/java/base/c3_result/T1_Result_Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/biz/aop/MultiTransactionAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/biz/aop/MultiTransactionAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/config/HuwDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/config/HuwDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/dao/hua/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/dao/hua/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/dao/huw/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/dao/huw/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/entity/hua/ProductDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/entity/hua/ProductDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/entity/huw/OrderDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/mybatis/mybatis-multi-sources/src/main/java/zen/hua/dal/multi/sample/entity/huw/OrderDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z02_dal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/z02_dal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/biz/RedisBootUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/biz/RedisBootUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/lock/SampleLockApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/lock/SampleLockApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/lock/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/lock/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/SampleBaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/SampleBaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t1_base/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t2_aop/config/CacheSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/main/java/redis/boot/sample/t2_aop/config/CacheSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T1_KeyBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T1_KeyBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T2_StringBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T2_StringBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T3_ListBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t1_base/c1_base/T3_ListBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t2_aop/RedisAopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t2_aop/RedisAopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t2_aop/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/z03_cache/cache-redis/redis-boot-sample/src/test/java/redis/boot/sample/t2_aop/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/java/Application.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +147,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/hua/Documents/HuaAll/hua-code/zen-study-java/zen-study-java/z03_cache/spring-cache/spring-cache-redis/src/main/resources",
+    "last_opened_file_path": "/Users/hua/Documents/HuaAll/hua-code/zen-study-java/zen-study-java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,8 +156,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "spring.configuration.checksum": "da4024ad45c854ee73b5219566c59d35",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "0021515a1d4864a5a33ce4435a7ced40",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -83,11 +171,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/z03_cache/spring-cache/spring-cache-redis/src/main/resources" />
       <recent name="$PROJECT_DIR$/z03_cache/cache-redis" />
       <recent name="$PROJECT_DIR$/z03_cache/cache-mongo" />
       <recent name="$PROJECT_DIR$/z02_dal/mybatis" />
-      <recent name="$PROJECT_DIR$/z11_generator/mybatis-generator/src/main/resources/mybatis-generator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/z02_dal/jdbc-template/jdbc-template-mysql/src/main/resources" />
@@ -114,23 +202,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringCacheRedisDemoApplication">
-    <configuration name="BaseTest.testDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mongo-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="zen.hua.mongo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="zen.hua.mongo.demo" />
-      <option name="MAIN_CLASS_NAME" value="zen.hua.mongo.demo.BaseTest" />
-      <option name="METHOD_NAME" value="testDemo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.T1_SampleTest.testSample">
     <configuration name="T1_DemoTest.testDemo (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jedis-demo" />
       <extension name="coverage">
@@ -158,6 +230,22 @@
       <option name="PACKAGE_NAME" value="zen.hua.jedis.demo.c1_native" />
       <option name="MAIN_CLASS_NAME" value="zen.hua.jedis.demo.c1_native.T1_DemoTest" />
       <option name="METHOD_NAME" value="testDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T1_SampleTest.testSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ql-express" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zen.hua.re.ql.sample.c1_base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="zen.hua.re.ql.sample.c1_base" />
+      <option name="MAIN_CLASS_NAME" value="zen.hua.re.ql.sample.c1_base.T1_SampleTest" />
+      <option name="METHOD_NAME" value="testSample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,11 +317,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.T1_SampleTest.testSample" />
         <item itemvalue="Spring Boot.SpringCacheRedisDemoApplication" />
         <item itemvalue="JUnit.T1_DemoTest.testDemo (1)" />
         <item itemvalue="JUnit.T1_DemoTest.testDemo" />
         <item itemvalue="JUnit.T2_BaseRepositoryTest.testDemo" />
-        <item itemvalue="JUnit.BaseTest.testDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -252,6 +340,8 @@
       <workItem from="1686232952210" duration="3003000" />
       <workItem from="1686235967450" duration="3044000" />
       <workItem from="1686239683659" duration="57000" />
+      <workItem from="1686239754506" duration="12511000" />
+      <workItem from="1686359680992" duration="4278000" />
     </task>
     <task id="LOCAL-00001" summary="基于springboot进行学习">
       <created>1684166828639</created>
@@ -295,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686239703787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mongo使用">
+      <created>1686239800374</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686239800374</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

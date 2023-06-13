@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import zen.hua.dal.mp.sample.base.entity.User;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: mapper示例
  * @author: HUA
  * @create: 2023-02-23 21:43

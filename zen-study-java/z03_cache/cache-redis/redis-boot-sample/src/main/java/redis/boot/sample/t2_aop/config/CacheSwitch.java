@@ -5,7 +5,7 @@ import cn.hutool.core.collection.CollUtil;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 缓存动态配置类(实际开发中用)
  * @author: HUA
  * @create: 2023-02-11 15:15

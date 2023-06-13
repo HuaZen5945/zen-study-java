@@ -9,7 +9,7 @@ import zen.hua.dal.mp.sample.base.entity.User;
 import zen.hua.dal.mp.sample.base.service.IUserService;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-02-23 22:42

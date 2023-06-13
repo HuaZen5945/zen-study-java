@@ -6,11 +6,11 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import zen.hua.dal.multi.biz.broker.ComboTransaction;
 import zen.hua.dal.multi.biz.aop.common.MultiTransactional;
+import zen.hua.dal.multi.biz.broker.ComboTransaction;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 多数据源事务切面
  * @author: HUA
  * @create: 2022-12-27 21:12

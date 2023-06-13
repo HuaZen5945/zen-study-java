@@ -1,4 +1,4 @@
-# zen-work
+# zen-study
 
 #### 介绍
 总结自己学习过的所有java知识。

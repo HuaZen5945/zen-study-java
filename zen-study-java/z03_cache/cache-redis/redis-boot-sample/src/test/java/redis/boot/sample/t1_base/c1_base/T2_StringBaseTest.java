@@ -6,15 +6,15 @@ import cn.hutool.core.thread.ThreadUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import redis.boot.sample.t1_base.BaseTest;
 import redis.boot.sample.biz.RedisBootUtil;
+import redis.boot.sample.t1_base.BaseTest;
 
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-15 23:48

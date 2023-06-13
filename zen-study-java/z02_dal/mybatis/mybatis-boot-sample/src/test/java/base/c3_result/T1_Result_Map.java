@@ -15,7 +15,7 @@ import zen.hua.mybatis.boot.sample.base.mapper.OrderMapper;
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 手动设置
  * @author: HUA
  * @create: 2023-03-13 21:34

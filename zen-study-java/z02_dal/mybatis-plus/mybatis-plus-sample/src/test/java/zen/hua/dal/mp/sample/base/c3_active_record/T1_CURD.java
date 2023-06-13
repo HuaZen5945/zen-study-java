@@ -3,13 +3,12 @@ package zen.hua.dal.mp.sample.base.c3_active_record;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.junit.Test;
 import zen.hua.dal.mp.sample.base.BaseTest;
-import zen.hua.dal.mp.sample.base.entity.User;
 import zen.hua.dal.mp.sample.base.entity.UserActiveRecord;
 
 import java.util.List;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-02-25 10:22

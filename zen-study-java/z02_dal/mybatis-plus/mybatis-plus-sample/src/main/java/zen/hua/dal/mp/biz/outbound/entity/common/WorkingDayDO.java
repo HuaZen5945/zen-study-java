@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 工作日时间表
  * @author: HUA
  * @create: 2023-02-11 10:31

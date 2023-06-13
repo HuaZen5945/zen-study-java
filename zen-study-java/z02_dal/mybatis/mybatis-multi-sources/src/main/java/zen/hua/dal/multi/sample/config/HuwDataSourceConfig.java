@@ -16,7 +16,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 import javax.sql.DataSource;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description: 数据源配置
  * @author: HUA
  * @create: 2022-11-01 21:03

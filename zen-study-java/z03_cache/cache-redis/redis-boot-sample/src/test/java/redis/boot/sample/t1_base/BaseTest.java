@@ -11,7 +11,7 @@ import redis.boot.sample.biz.RedisBootUtil;
 import javax.annotation.Resource;
 
 /**
- * @program: zen-work
+ * @program: zen-study
  * @description:
  * @author: HUA
  * @create: 2023-03-15 19:03
