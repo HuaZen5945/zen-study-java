@@ -21,7 +21,7 @@
         <!--非核心依赖-->
         <dependency>
             <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
+            <artifactId>hutool-core</artifactId>
             <scope>provided</scope>
         </dependency>
 
